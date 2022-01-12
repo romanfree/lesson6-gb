@@ -1,8 +1,8 @@
 package com.geekbrains;
 
 public class Cat extends Animal{
-    static int run = 200;
-    static int swim = 0;
+    private static int run = 200;
+    private static int swim = 0;
 
     public Cat(String name){
         super(name, run, swim);

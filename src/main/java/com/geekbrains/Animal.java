@@ -1,9 +1,9 @@
 package com.geekbrains;
 
 public class Animal {
-    public String name;
-    public int run;
-    public int swim;
+    private String name;
+    private int run;
+    private int swim;
 
     public Animal(String name, int run, int swim) {
         this.name = name;

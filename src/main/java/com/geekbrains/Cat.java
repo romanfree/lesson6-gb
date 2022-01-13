@@ -1,15 +1,17 @@
 package com.geekbrains;
 
 public class Cat extends Animal{
-    private static int run = 200;
-    private static int swim = 0;
-
-    public Cat(String name){
-        super(name, run, swim);
-    }
 
     @Override
-    public void swimAnimal(int swimLength) {
+    public void lengthRun(int speed){
+        if(speed <= 200){
+            System.out.println("Кот пробежал " + speed + "м");
+        }else {
+            System.out.println("Кот столько не пробежит");
+        }
+    }
+    @Override
+    public void lengthSwim(int speed) {
         System.out.println("кот не умеет плавать");
     }
 }

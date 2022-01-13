@@ -1,10 +1,21 @@
 package com.geekbrains;
 
 public class Dog extends Animal {
-    private static int run = 500;
-    private static int swim = 10;
 
-    public Dog(String name){
-        super(name, run, swim);
+    @Override
+    public void lengthRun(int speed){
+        if(speed <= 500){
+            System.out.println("Собака пробежала " + speed + "м");
+        }else {
+            System.out.println("Собака столько не пробежит");
+        }
+    }
+    @Override
+    public void lengthSwim(int speed) {
+        if(speed <= 10){
+            System.out.println("Собака проплыла " + speed + "м");
+        }else {
+            System.out.println("Собака столько не проплывет");
+        }
     }
 }
